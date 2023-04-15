@@ -6,6 +6,10 @@
   padding: 0.5em 2em;
 }
 
+.navbar span {
+  color: #ff8c00;
+}
+
 .brand {
   font-size: 1.2em;
 }
