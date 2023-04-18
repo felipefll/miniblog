@@ -14,27 +14,49 @@ const CreatePost = () => {
 
   const { user } = useAuthValue();
 
+  const navigate = useNavigate();
+
   const { insertDocument, response } = useInsertDocument("posts");
 
-  const handleSubmint = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setFormError("");
+
+    // validate image
+    try {
+      new URL(image);
+    } catch (error) {
+      setFormError("A imagem precisa ser uma URL.");
+    }
+
+    // create tags array
+    const tagsArray = tags.split(",").map((tag) => tag.trim().toLowerCase());
+
+    // check values
+    if (!title || !image || !tags || !body) {
+      setFormError("Por favor, preencha todos os campos!");
+    }
+
+    if (formError) return;
 
     insertDocument({
       title,
       image,
       body,
-      tags,
+      tagsArray,
       uid: user.uid,
       createdBy: user.displayName,
     });
+
+    //redirect to home page
+    navigate("/");
   };
 
   return (
     <div className={styles.create_post}>
       <h2>Criar post</h2>
       <p>Escreva e compartilhe seu conhecimento!</p>
-      <form onSubmit={handleSubmint}>
+      <form onSubmit={handleSubmit}>
         <label>
           <span>Título:</span>
           <input
@@ -85,6 +107,7 @@ const CreatePost = () => {
           </button>
         )}
         {response.error && <p className="error">{response.error}</p>}
+        {formError && <p className="error">{formError}</p>}
       </form>
     </div>
   );
