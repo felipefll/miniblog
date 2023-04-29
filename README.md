@@ -1,5 +1,27 @@
 
-Miniblog project in creation
+Este projeto de Miniblog, consiste em um blog feito com React no frontend e Firebase no backend.
+
+Com página de login utilizando um hook de autenticação.
+![image](https://user-images.githubusercontent.com/56659697/235301234-c7d09e26-a786-4880-87f9-b7c51ccfac34.png)
+
+Uma página de registro também utilizando um hook de autenticação.
+![image](https://user-images.githubusercontent.com/56659697/235301341-64581087-e952-4cdc-a697-8a6bd85fce8b.png)
+
+Uma página de Home, com as principais postagens.
+![image](https://user-images.githubusercontent.com/56659697/235301636-82b24a6e-ea0c-4d51-bdc6-ff41960e4e4a.png)
+
+Uma página de about com as inforações do blog e com um botão para a criação de um post.
+![image](https://user-images.githubusercontent.com/56659697/235301453-67c0a820-dd77-4853-993d-09c3461b29c0.png)
+
+Uma página de search para buscas de palavras-chaves.
+![image](https://user-images.githubusercontent.com/56659697/235301470-2d30804b-e935-49d1-92a8-abb6951f8588.png)
+
+Uma página de dashboard para edição dos posts.
+![image](https://user-images.githubusercontent.com/56659697/235301680-d1324194-4af2-4e1c-a3b5-a694b7efc403.png)
+
+
+
+
 
 # Getting Started with Create React App
 
