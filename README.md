@@ -19,6 +19,9 @@ Uma página de search para buscas de palavras-chaves.
 Uma página de dashboard para edição dos posts.
 ![image](https://user-images.githubusercontent.com/56659697/235301680-d1324194-4af2-4e1c-a3b5-a694b7efc403.png)
 
+![image](https://user-images.githubusercontent.com/56659697/235311579-c3634801-5dab-486f-9349-f0c4b852ddf5.png)
+
+
 
 
 
